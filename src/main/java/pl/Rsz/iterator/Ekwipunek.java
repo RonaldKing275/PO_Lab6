@@ -21,8 +21,12 @@ class Ekwipunek implements Iterable<Przedmiot> {
         return new EkwipunekIterator(this);
     }
 
-    // Specjalny iterator dla kategorii [cite: 34]
+    // Specjalny iterator dla kategorii
     public Iterator<Przedmiot> iteratorKategorii(TypPrzedmiotu szukanyTyp) {
         return new KategoriaIterator(this, szukanyTyp);
+    }
+
+    public Iterator<Przedmiot> iteratorRzadkosci(Rzadkosc szukanaRzadkosc) {
+        return new RzadkoscIterator(this, szukanaRzadkosc);
     }
 }

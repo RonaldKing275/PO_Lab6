@@ -1,8 +1,13 @@
 package pl.Rsz.iterator;
 
 enum TypPrzedmiotu {
-    BROŃ,
-    PANCERZ,
+    BRON_JEDNORECZNA,
+    BRON_DWURECZNA,
+    HELM,
+    NAPIERSNIK,
+    SPODNIE,
+    BUTY,
+    AKCESORIA,
     MIKSTURA,
     INNE
 }

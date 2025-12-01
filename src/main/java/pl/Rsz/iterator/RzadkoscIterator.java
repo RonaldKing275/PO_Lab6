@@ -2,21 +2,21 @@ package pl.Rsz.iterator;
 
 import java.util.Iterator;
 
-class KategoriaIterator implements Iterator<Przedmiot> {
+public class RzadkoscIterator implements Iterator<Przedmiot> {
     private Ekwipunek ekwipunek;
-    private TypPrzedmiotu szukanyTyp;
+    private Rzadkosc szukanaRzadkosc;
     private int index = 0;
 
-    public KategoriaIterator(Ekwipunek ekwipunek, TypPrzedmiotu typ) {
+    public RzadkoscIterator(Ekwipunek ekwipunek, Rzadkosc rzadkosc) {
         this.ekwipunek = ekwipunek;
-        this.szukanyTyp = typ;
+        this.szukanaRzadkosc = rzadkosc;
     }
 
     @Override
     public boolean hasNext() {
         int tempIndex = index;
         while (tempIndex < ekwipunek.getPrzedmioty().size()) {
-            if (ekwipunek.getPrzedmioty().get(tempIndex).getTyp() == szukanyTyp) {
+            if (ekwipunek.getPrzedmioty().get(tempIndex).getRzadkosc() == szukanaRzadkosc) {
                 return true;
             }
             tempIndex++;
@@ -28,7 +28,7 @@ class KategoriaIterator implements Iterator<Przedmiot> {
     public Przedmiot next() {
         while (index < ekwipunek.getPrzedmioty().size()) {
             Przedmiot p = ekwipunek.getPrzedmioty().get(index++);
-            if (p.getTyp() == szukanyTyp) {
+            if (p.getRzadkosc() == szukanaRzadkosc) {
                 return p;
             }
         }
