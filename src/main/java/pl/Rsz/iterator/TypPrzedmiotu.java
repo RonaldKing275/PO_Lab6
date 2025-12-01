@@ -1,6 +1,6 @@
 package pl.Rsz.iterator;
 
-enum TypPrzedmiotu {
+public enum TypPrzedmiotu {
     BRON_JEDNORECZNA,
     BRON_DWURECZNA,
     HELM,

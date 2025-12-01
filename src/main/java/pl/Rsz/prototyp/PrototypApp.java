@@ -14,7 +14,7 @@ public class PrototypApp {
         System.out.println("Oryginał: " + k1);
         System.out.println("Klon:     " + k2);
 
-        // Test głębokiej kopii [cite: 32]
+        // Test kopii
         System.out.println("\n--- Modyfikacja klona (zmieniam kolor i dodaję punkt) ---");
         k2.kolor = "Niebieski";
         k2.punkty.get(0).x = 999; // Zmiana współrzędnej w klonie

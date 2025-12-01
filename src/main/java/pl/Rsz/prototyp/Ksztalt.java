@@ -9,13 +9,13 @@ abstract class Ksztalt implements Cloneable {
 
     public Ksztalt() {}
 
-    // Konstruktor kopiujący dla wygody
     public Ksztalt(Ksztalt target) {
         if (target != null) {
+
             this.kolor = target.kolor;
-            // GŁĘBOKA KOPIA LISTY:
+
             for (Punkt p : target.punkty) {
-                this.punkty.add(new Punkt(p)); // Tworzymy nowe instancje punktów
+                this.punkty.add(new Punkt(p));
             }
         }
     }

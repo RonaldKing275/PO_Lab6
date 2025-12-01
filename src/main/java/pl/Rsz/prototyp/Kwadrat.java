@@ -6,7 +6,7 @@ class Kwadrat extends Ksztalt {
     public Kwadrat() {}
 
     public Kwadrat(Kwadrat target) {
-        super(target); // Wywołanie logiki głębokiej kopii z klasy bazowej
+        super(target);
         if (target != null) {
             this.bok = target.bok;
         }
