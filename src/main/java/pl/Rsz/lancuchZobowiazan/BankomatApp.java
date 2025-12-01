@@ -15,5 +15,11 @@ public class BankomatApp {
 
         System.out.println("\n--- Próba wypłaty 45 PLN ---");
         h50.przetworz(45);
+
+        System.out.println("\n--- Próba wypłaty 35 PLN ---");
+        h50.przetworz(35);
+
+        System.out.println("\n--- Próba wypłaty 5 PLN ---");
+        h50.przetworz(5);
     }
 }

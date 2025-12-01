@@ -7,10 +7,10 @@ class Banknot10Handler extends BanknotHandler {
             int reszta = kwota % 10;
             System.out.println("Wypłacono " + ilosc + " x 10 PLN");
             if (reszta > 0) {
-                System.out.println("Nie można wypłacić reszty: " + reszta + " PLN. Kwota musi być wielokrotnością 10.");
+                System.out.println("Nie można wypłacić reszty: " + reszta + " PLN. Kwota musi być wielokrotnością 10!");
             }
         } else {
-            System.out.println("Nie można wypłacić kwoty: " + kwota + " PLN.");
+            System.out.println("Nie można wypłacić kwoty: " + kwota + " PLN. Kwota musi być większa od 10!");
         }
     }
 }

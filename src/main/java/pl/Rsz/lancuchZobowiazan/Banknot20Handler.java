@@ -9,8 +9,7 @@ class Banknot20Handler extends BanknotHandler {
             if (reszta > 0 && nastepny != null) {
                 nastepny.przetworz(reszta);
             } else if (reszta > 0) {
-                // Przekaż dalej, może 10 PLN obsłuży resztę (np. przy kwocie 30: 20+10)
-                if(nastepny != null) nastepny.przetworz(reszta);
+                System.out.println("Nie można wydać reszty: " + reszta);
             }
         } else if (nastepny != null) {
             nastepny.przetworz(kwota);
