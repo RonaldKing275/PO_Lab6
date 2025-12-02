@@ -7,6 +7,7 @@ public class PrototypApp {
         k1.bok = 10;
         k1.dodajPunkt(0, 0);
         k1.dodajPunkt(10, 10);
+        k1.dodajPunkt(20, 20);
 
         // Klonowanie
         Kwadrat k2 = (Kwadrat) k1.clone();

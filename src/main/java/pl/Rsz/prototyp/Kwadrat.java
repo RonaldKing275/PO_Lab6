@@ -16,4 +16,9 @@ class Kwadrat extends Ksztalt {
     public Ksztalt clone() {
         return new Kwadrat(this);
     }
+
+    @Override
+    public String toString() {
+        return "Kwadrat [Kolor=" + kolor + ", Bok=" + bok + ", Punkty=" + punkty + "]";
+    }
 }
