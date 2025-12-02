@@ -12,7 +12,4 @@ class Punkt {
         this.x = p.x;
         this.y = p.y;
     }
-
-    @Override
-    public String toString() { return "(" + x + "," + y + ")"; }
 }
