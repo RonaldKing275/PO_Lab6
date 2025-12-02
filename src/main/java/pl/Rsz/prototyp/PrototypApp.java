@@ -17,9 +17,9 @@ public class PrototypApp {
         // Test kopii
         System.out.println("\n--- Modyfikacja klona (zmieniam kolor i dodaję punkt) ---");
         k2.kolor = "Niebieski";
-        k2.punkty.get(0).x = 999; // Zmiana współrzędnej w klonie
+        k2.punkty.get(0).x = 255; // Zmiana współrzędnej w klonie
 
-        System.out.println("Oryginał: " + k1 + " (powinien zostać bez zmian)");
+        System.out.println("Oryginał: " + k1);
         System.out.println("Klon:     " + k2);
     }
 }
