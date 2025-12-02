@@ -3,7 +3,7 @@ package pl.Rsz.prototyp;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class Ksztalt implements Cloneable {
+abstract class Ksztalt {
     public List<Punkt> punkty = new ArrayList<>();
     public String kolor;
 

@@ -12,7 +12,6 @@ class Kwadrat extends Ksztalt {
         }
     }
 
-    @Override
     public Ksztalt clone() {
         return new Kwadrat(this);
     }
